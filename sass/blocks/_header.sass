@@ -1,0 +1,44 @@
+.header
+	background: url(../img/header-bg.jpg)
+	box-shadow: inset 0px -4px 5px 0px rgba(0, 0, 0, 0.05)
+	// .header__inner
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		min-height: 123px
+		font-family: $roboto_c
+
+
+.logo
+	font-size: 40px
+	color: $title-color
+	font-weight: bold
+	text-transform: uppercase
+.nav
+	// .nav__list
+	&__list
+		display: flex
+		gap: 20px
+	// .nav__item
+	&__item
+		position: relative
+		&:hover .nav__link:not(.nav__link_active)::after
+			content: ''
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #1abb9c
+			position: absolute
+
+
+	// .nav__link
+	&__link
+		font-size: 16px
+		color: $title-color
+		font-weight: bold
+		text-transform: uppercase
+		&_active
+			color: #1abb9c
+			
+
