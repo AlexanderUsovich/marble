@@ -1,0 +1,90 @@
+.footer
+	background: #E5E5E5 url(../img/footer-bg.jpg)
+	box-shadow: inset 0px 9px 8px 0px rgba(0, 0, 0, 0.22)
+	min-height: 460px
+	color: #cacaca
+	// .footer__inner
+	&__inner
+		padding: 50px 0 45px
+	// .footer__top
+	&__top
+		@include flex
+		border-bottom: 2px solid rgba(255, 255, 255, .11)
+		padding-bottom: 50px
+
+	// .footer__item
+	&__item
+		&:nth-child(1)
+			max-width: 265px
+		&:nth-child(2)
+			max-width: 250px
+		&:nth-child(3)
+			max-width: 215px
+		&:nth-child(4)
+			max-width: 255px
+		&_popular
+			a
+				color: #cacaca
+				&:hover
+					text-decoration: underline
+			
+
+	// .footer__title
+	&__title
+		color: #6c6c6c
+		font-size: 18px
+		font-family: $roboto_c
+		margin-bottom: 15px
+
+	// .footer__text
+	&__text
+		font-size: 14px
+		line-height: 171.428571% // 24/14
+		margin-top: 15px
+		&_twitter
+			padding-left: 25px
+			background: url('../icons/footer-twitter.png') no-repeat 0 7px
+		
+
+	// .footer__list
+	&__list
+		line-height: 171.428571% 
+		
+	// .footer__list-item
+	&__list-item
+		padding-left: 25px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			background: url('../icons/footer-sprite.png') no-repeat
+			width: 12px
+			height: 13px
+			position: absolute
+			top: 5px
+			left: 0
+		&:nth-child(2)::before
+			background-position: -12px 0
+		&:nth-child(3)::before
+			background-position: -24px 2px
+			
+		
+	&__address
+		font-style: normal
+
+	// .footer__phone
+	&__phone
+		color: #cacaca
+
+	// .footer__email
+	&__email
+		color: #cacaca
+
+	// .footer__bottom
+	&__bottom
+		padding-top: 50px
+	address
+		font-style: normal
+	time
+		font-family: $roboto_s
+		font-size: 12px

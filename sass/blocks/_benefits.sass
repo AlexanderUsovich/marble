@@ -1,0 +1,39 @@
+.benefits   
+    // .benefits__inner
+    &__inner
+        @include flex($jc: space-around)
+        padding: 60px 0
+        border-bottom: 2px solid #dcdcdc
+    // .benefits__item
+    &__item
+        flex-basis: 240px
+        text-align: center   
+        &::before
+            content: ''        
+            display: block
+            margin: 0 auto
+            width: 90px
+            height: 90px
+            background: url('../icons/benefits-sprit.png') no-repeat
+        &:nth-child(2)::before
+            background-position: -90px 0
+        &:nth-child(3)::before
+            background-position: -180px 0
+        &:nth-child(4)::before
+            background-position: -270px 0
+            
+            
+    // .benefits__title
+    &__title
+        font-size: 18px
+        font-family: $roboto_s
+        color: $title-color
+        margin-top: 30px
+
+    // .benefits__text
+    &__text
+        color: #616161
+        line-height: 171.428571% // 24/14
+        margin-top: 10px
+
+

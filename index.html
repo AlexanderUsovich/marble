@@ -10,6 +10,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -19,7 +20,7 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
-					<div class="logo">Marble</div>
+					<div class="logo"><a href="#">Marble</a></div>
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item"><a href="#" class="nav__link nav__link_active">Home</a></li>
@@ -33,9 +34,156 @@
 				</div>
 			</div>
 		</header>
-		<main class="main"></main>
-		<footer class="footer"></footer>
-	</div>
+		<main class="main">
 
+			<section class="slider">
+
+				<div class="slider__container">
+
+					<div class="slider__content">
+						<h1 class="maintitle">We are a digital & branding agency based in London.</h1>
+						<div class="slider_subtitle">We love to turn great ideas into beautiful products.</div>
+						<button class="slider__btn">see Portfolio</button>
+					</div>
+
+					<div class="slider__layers" id="scene">
+						<div class="layerv layer__space" data-depth="0.1"><img src="img/layers/slider.jpg" alt=""></div>
+						<div class="layerv layer__earth" data-depth="0.3"><img src="img/layers/earth.png" alt=""></div>
+						<div class="layerv layer__shuttle" data-depth="1"><img src="img/layers/shuttle.png" alt=""></div>
+						<div class="layerv layer__comet" data-depth="0.2"><img src="img/layers/comet.png" alt=""></div>
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="benefits">
+				<div class="container">
+					<div class="benefits__inner">
+						<div class="benefits__item wow animate__animated animate__bounceIn" data-wow-delay=".2s">
+							<h3 class="benefits__title">Pellentesque</h3>
+							<p class="benefits__text">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante
+								venenatis condimentum velit dapibus.</p>
+						</div>
+						<div class="benefits__item wow animate__animated animate__bounceIn" data-wow-delay=".4s">
+							<h3 class="benefits__title">Consectetur</h3>
+							<p class="benefits__text">Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum
+								nulla sed consectetur dui.</p>
+						</div>
+						<div class="benefits__item wow animate__animated animate__bounceIn" data-wow-delay=".6s">
+							<h3 class="benefits__title">Tristiquet</h3>
+							<p class="benefits__text">Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut
+								fermentum massa justo risus.</p>
+						</div>
+						<div class="benefits__item wow animate__animated animate__bounceIn" data-wow-delay=".8s">
+							<h3 class="benefits__title">Fermentum</h3>
+							<p class="benefits__text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+								vestibulum sagittis lacus mollis.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="works">
+				<div class="container">
+					<h2 class="works__title">Our Latest Works</h2>
+					<div class="works__body">
+						<div class="works__item">
+							<div class="works__img wow animate__animated animate__bounceIn" data-wow-delay=".2s"><img
+									src="img/works-1.jpg" alt="" class="works__img"></div>
+							<h3 class="works__bodytitle">Nobis Business Card</h3>
+							<div class="works__bodysubtitle">Business Card, Graphic</div>
+							<p class="works__text">Sed posuere consectetur est at lobortis. Porta sagittis lacus vel
+								augue laoreet rutrum.</p>
+						</div>
+						<div class="works__item">
+							<div class="works__img wow animate__animated animate__bounceIn" data-wow-delay=".4s"><img
+									src="img/works-2.jpg" alt="" class="works__img"></div>
+							<h3 class="works__bodytitle">New Fun Project</h3>
+							<div class="works__bodysubtitle">Web Design, Application</div>
+							<p class="works__text">Nulla vitae elit libero, a pharetra augue. Donec sed odio dui.
+								Vestibulum id ligula porta felis.</p>
+						</div>
+						<div class="works__item">
+							<div class="works__img wow animate__animated animate__bounceIn" data-wow-delay=".6s"><img
+									src="img/works-3.jpg" alt="" class="works__img"></div>
+							<h3 class="works__bodytitle">Passionaries Branding Cover</h3>
+							<div class="works__bodysubtitle">Branding, Graphic Design</div>
+							<p class="works__text">Curabitur blandit tempus porttitor. Donec id elit non mi porta
+								gravida at eget metus.</p>
+						</div>
+					</div>
+					<div class="works__bottom  wow animate__animated animate__zoomIn">
+						<div class="works__quotes"><img src="icons/works-quotes.png" alt=""></div>
+						<div class="works__bottom-text">Cras mattis consectetur purus sit amet fermentum. Donec id elit
+							non mi porta gravida at eget metus. Duis mollis, est non commodo luctus erat porttitor.
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__top">
+						<div class="footer__item wow animate__animated animate__rotateInDownLeft">
+							<h3 class="footer__title">Get In Touch</h3>
+							<p class="footer__text">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus
+								fermentum, porta sem malesuada magna. </p>
+							<p class="footer__text">
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<address class="footer__address">Moonshine Street No: 14/05 <br>
+										Light City, Jupiter</address>
+								</li>
+								<li class="footer__list-item"><a class="footer__phone" href="tel:02475416587">0247 541
+										65 87</a></li>
+								<li class="footer__list-item"><a class="footer__email"
+										href="mailto:support@longwave.com">support@longwave.com</a></li>
+							</ul>
+							</p>
+						</div>
+						<div class="footer__item wow animate__animated animate__rotateInDownLeft">
+							<h3 class="footer__title">Twitter</h3>
+							<p class="footer__text footer__text_twitter">Aenean lacinia bibendum nulla sed leo posuere
+								erat a ante
+								venenatisdapibus posuere velit aliquet.</p>
+							<p class="footer__text footer__text_twitter">Donec ullamcorper metus auctor fringilla.
+								Nullam quis risus eget.
+							</p>
+							<p class="footer__text footer__text_twitter">Vestibulum id ligula porta euismod semper.
+								Maecenas faucibus mollis.
+							</p>
+						</div>
+						<div class="footer__item footer__item_popular wow animate__animated animate__rotateInDownLeft">
+							<h3 class="footer__title">Popular Posts</h3>
+							<p class="footer__text"><a href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor
+									auctor.</a></p>
+							<time datetime="2012-11-14">14 Nov, 2012 </time>
+							<p class="footer__text"><a href="#">Scelerisque nisl consectetur et.</a></p>
+							<time datetime="2012-05-22">22 May, 2012 </time>
+							<p class="footer__text"><a href="#">Pellentesque ornare sem lacinia quam venenatis
+									vestibulum.</a> </p>
+							<time datetime="2012-07-15">15 July, 2012 </time>
+						</div>
+						<div class="footer__item wow animate__animated animate__rotateInDownLeft">
+							<h3 class="footer__title">About Us</h3>
+							<p class="footer__text">Vestibulum id ligula porta felis euismod semper. Duis mollis, est
+								non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+							</p>
+							<p class="footer__text">Cum sociis natoque penatibus et magnis dis parturient montes,
+								nascetur ridiculus mus curabitur blandit tempus.</p>
+						</div>
+					</div>
+					<div class="footer__bottom wow animate__animated animate__bounceInDown">
+						© 2013 Marble. All rights reserved. Theme by elemis.
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>
